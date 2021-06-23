@@ -1,0 +1,3 @@
+The IM_talk_SEV_data_analysis_course repository contains a presentation providing an overview of information management. This presentation has been given to the SEV LTER data analysis course at the University of New Mexico.  
+
+The presentation/ folder contains a .Rmd document which is the raw R code to produce an isoslides formatted slideshow in HTML format. The .html file is the finished presentation.  
