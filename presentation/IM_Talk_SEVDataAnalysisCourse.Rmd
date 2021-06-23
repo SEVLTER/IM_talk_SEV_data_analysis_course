@@ -1,0 +1,399 @@
+---
+title: "Information Management"
+author: "Kristofer Hall, SEV LTER Information Manager"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+
+## Overview - 
+
+- High level, abstract definitions  
+
+- Why information management is important to you  
+
+- Information management process
+
+
+
+
+## Data - 
+
+individual units of information  
+
+_or_  
+
+sometimes said to be transformed into information when it is viewed in context or in post-analysis  
+
+Source: [Wikipedia: **Data**](https://en.wikipedia.org/wiki/Data)
+
+
+
+
+
+## Information - 
+
+the resolution of uncertainty  
+
+answers the question of "what an entity is", thus defining both the essence and nature of its characteristics  
+
+associated with data - data represents values attributed to parameters, and information is data in context and with meaning attached  
+
+relates to knowledge, and knowledge signifies understanding of a concept    
+
+Source: [Wikipedia: **Information**](https://en.wikipedia.org/wiki/Information)
+
+
+
+
+
+## Information Management (IM) - 
+
+concerns a **cycle** of organizational activity: the acquisition of information from one or more sources, the custodianship and the distribution of that information to those who need it, and its ultimate disposition through archiving or deletion.  
+
+Source: [Wikipedia: **Information Management**](https://en.wikipedia.org/wiki/Information_management)
+
+
+
+
+## Information Management and the LTER - 
+
+Information management in the LTER program involves making sure that data are well documented, clean, and made publicly available to the wider scientific community in a timely manner  
+
+
+
+
+## Why should you care?
+
+As early career scientists, you will not be able to avoid thinking about information management  
+
+Nor should you - it is important to science and will only become more so
+
+
+---
+
+NSF and many other funding agencies require data management plans as a part of grant proposals  
+
+A **data management plan** describes how data will be handled during and after a research project
+
+
+---
+
+The LTER Network was founded to collect long-term and large-scale data at various research sites in order to be able to research long-term and large-scale ecological phenomenon.  
+
+_"The value of LTER’s long-term data resource is immense and LTER data managers have been leaders in the movement to ensure that ecological data is accessible and usable. Dedicated information managers document and archive LTER data in public repositories so that they can be re-used by the broader scientific community."_  
+
+Source: ["About the LTER Network" - LTER Network website](https://lternet.edu/about/)
+
+
+---
+
+If you receive a SEV summer graduate fellowship, you must submit an initial version of metadata (data about data) related to the data you will collect prior to receiving the first part of your stipend. To receive the final part of your stipend, you must submit your data and finalized metadata
+
+---
+
+Many publications are beginning to require that both data and the analytic code used to create the results presented in a manuscript be made available to the public through various data repositories  
+
+There is a trend in science towards practicing **reproducible research,** and this requires implementing good information and data management strategies from the outset of a project  
+
+
+---
+
+Ecology is becoming more data driven in general. In business, they call data the _new oil._  In biology, maybe it's the new microscope?     
+
+Making data, metadata and code publicly available makes your work more visible and valuable to a wider audience  
+
+It makes you, your data and your manuscripts more findable and easily citable 
+
+It may help open new avenues for research and collaborations  
+
+It will help your career  
+
+
+
+
+## The Data Life Cycle - thinking about information management  
+
+![](../data_life_cycle.png)  
+  
+  
+
+Source: [DataOne - **Data Life Cycle**](https://www.dataone.org/data-life-cycle)
+
+
+
+
+## Plan
+
+This is the best time to think deeply about entire research project and data strategy   
+
+What data will be collected and how will it be managed and made accessible throughout its lifetime?  
+
+What format will be used for data collection?  
+
+What variables will you collect? How will you name variables in your datasets? This is the time to develop a data dictionary that describes what variables will be collected, their definitions, how they will be named, what the valid values are that variables can take, how you will designate missing values, etc.  
+
+Where will data be stored and how will it be backed up? Might need to consider cost of collecting data depending on the volume of data  
+
+
+
+
+---
+
+**Tips for collecting data:**  
+
+-  Consult a data/information manager early on if you have questions about best practices    
+
+-  Develop a data dictionary at the outset that lays out the variables to be collected, their definitions, and what values those variables can take  
+
+-  Use good variable names that are computer readable
+   -  use ``` _ ``` between words or camelCase
+   -  don't use symbols or start with numbers
+   -  don't use . because some languages like Python use periods to denote methods on objects. Data repositories may not accept variables with .    
+-  Use descriptive file names  
+
+-  Use ISO 8601 date formatting: YYYY-MM-DD  
+
+---
+
+-  Choose consistent methods for denoting missing data
+   -  There is not a consensus on best choice
+   -  NA or -999, etc. If using a numeric value like -999, make sure it is well beyond the expected values of any of your data variables  
+
+-  Do not use proprietary file formats for publishing data  
+   -  These formats may become obsolete or be inaccessible to individuals without proprietary software
+   -  No Excel - single flat files.  One table per file.  No multiple worksheets
+   -  Use .csv or .txt flat file formats. If you use Excel to collect data, it will need to be converted to flat file formats for posting in a data repository    
+  
+-  Nonstandard data (photo, geospatial, acoustic, genetic) will require further considerations. There is an LTER group working that just developed a set of best practices for handling various types of nontabular data.  
+
+
+
+## Collect
+
+Observations are made either by hand or with sensors or other instruments and the data are placed a into digital form  
+
+During the collection process, it is important to revisit the plan to make sure it is being properly executed  
+
+Check the data regularly to make sure that there are not any oversights or problems with data integrity. It is far better to catch problems early than after data collection is complete.  
+
+
+
+## Assure
+
+Assure the quality of the data through various checks and inspections  
+
+Are the code values you decided on in the planning stage the only ones used in the data?  
+
+Are the data values within the expected range?  
+
+Is there missing data, and is that expected?
+
+
+
+## Describe
+
+**Metadata** - data about the data - describes the who, what, when, where, and why of the data  
+
+Different data repositories and publishers have different metadata standards  
+
+Accurately and thoroughly describe data using the appropriate metadata standards for the repository in which you plan to publish your data     
+
+Data is not useful without the information in the metadata  
+
+Having metadata helps you as the researcher be able to recall the details of the data if you revisit it years down the line  
+
+It helps others to understand exactly what data you collected and how to properly interpret it  
+
+
+---
+
+The SEV LTER has a metadata template document that helps you develop the required information to produce high quality metadata related to your LTER projects. This is necessary in order to publish a data package in the EDI data repository. You will work with the information manager to post a data package to EDI.      
+
+**Data package -** what is posted to a repository.  Contains raw and/or analytical data, metadata and any additional documentation, such as scripts  
+
+
+
+## Preserve
+
+Submit data package to an appropriate long-term archive/repository  
+
+The LTER Network publishes LTER-related data in the Environmental Data Initiative (EDI) data repository  
+
+Sometimes if there are more appropriate data repositories, such as for genomic data, those may be used - consult with an IM and/or EDI  
+
+Non-LTER related data packages can also be submitted to EDI  
+
+There are numerous other data repositories out there  
+
+
+---
+
+**EDI:**  
+
+_The Environmental Data Initiative is an NSF-funded project, actively promoting and enabling curation and re-use of environmental data. We assist researchers from field stations, individual laboratories, and research projects of all sizes to archive and publish their environmental data. EDI is committed to enable data that is Findable, Accessible, Interoperable, and Reusable (FAIR)._  
+
+
+
+Source: <https://environmentaldatainitiative.org/>
+
+
+---
+
+The LTER Network and EDI has adopted the **Ecological Metadata Language**, or EML, standard  
+
+_Ecological Metadata Language (EML) is a metadata specification developed by the ecology discipline and for the ecology discipline_      
+
+_EML is implemented as a series of XML document types that can by used in a modular and extensible manner to document ecological data_  
+
+_Each EML module is designed to describe one logical part of the total metadata that should be included with any ecological dataset_  
+
+
+Source: <https://knb.ecoinformatics.org/external//emlparser/docs/index.html>  
+
+---
+
+It is a _machine readable_ language, meaning that you can program a computer to produce and to read it  
+
+Python and R have libraries for parsing XML  
+
+In order to publish a data package to EDI, metadata must be converted to valid EML  
+
+Data and metadata must pass numerous EDI validation checks to ensure they are of high quality    
+
+One role of an IM is to assist researchers in producing a high quality data packages and publishing them to EDI  
+
+EDI parses the EML into nicely formatted data packages on the web   
+
+Example from [knb-lter-sev.318.1](https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-sev.318.1) - _Sevilleta Long Term Ecological Research Program Plant Species List_  
+
+
+
+
+## Discover
+
+Having data packages in public data repositories makes them easier to locate and obtain  
+
+EDI utilizes search engine optimization to make data packages more visible during web searches  
+
+You can search all data packages in EDI through their search engine  
+
+EDI is a member node of DataONE, The Data Observation Network for Earth, that incorporates numerous other data repositories    
+
+_DataONE is a community driven project providing access to data across multiple member repositories, supporting enhanced search and discovery of Earth and environmental data._ <https://www.dataone.org/>  
+
+
+---
+
+**DOI - Digital Object Identifier**  
+
+-  Persistent interoperable identifiers for use on digital networks
+-  Assigned by EDI and other data repositories when data packages are published
+-  Can be cited and searched
+-  When a data package is updated, a new DOI is assigned in order to be able to track the provenance or history of the data package
+-  When you search for a data package on EDI, the most recent version of the package is returned but earlier versions are still available online
+
+
+---
+
+**ORCID ID**  
+
+<https://orcid.org/>  
+
+_ORCID provides a persistent digital identifier that distinguishes you from every other researcher and, through integration in key research workflows such as manuscript and grant submission, supports automated linkages between you and your professional activities ensuring that your work is recognized._  
+
+Can be included in manuscripts, data packages, etc.  
+
+Get one!  It's free and easy and valuable for your career  
+
+
+
+---
+
+The LTER Network is working towards and encourages the use of standardized keywords, units and taxonomies to aid in the search for and integration of datasets
+
+LTER Controlled Vocabulary: <https://vocab.lternet.edu/vocab/vocab/index.php>  
+
+LTER Unit Registry: <https://unit.lternet.edu/unitregistry/>
+
+
+## Integrate
+
+Depending on your study, you may want to locate and integrate various disparate datasets into one homogeneous dataset that you can readily analyze  
+
+Even if you don't plan to integrate data for a particular study, you should provide high quality data to the research community so that others may be able to locate and integrate your data into their studies  
+
+Data repositories, persistent identifiers and consistent use of keywords, units and taxonomies makes this much more feasible    
+
+
+---
+
+The ecological information management community is continuing to build tools that will make data integration easier in the future  
+
+For example, **RDF (Resource Description Framework) Triple** - a semantic triple that codifies a statement about semantic data in the form of subject–predicate–object expressions (e.g. Hanna is 25)  
+
+Again, this enables knowledge to be represented in a machine-readable way  
+
+These tools and technologies will become more powerful, but it requires that everyone think carefully about the data they are collecting and publishing to repositories  
+
+Sources: [Wikipedia: **Semantic Triple**](https://en.wikipedia.org/wiki/Semantic_triple) and [**RDF website**](https://www.w3.org/TR/rdf-concepts/)
+
+
+## Analyze
+
+Data are analyzed  
+
+In reality, this often occurs much earlier  
+
+For many original studies, you will not publish a data package until you have a manuscript that has been accepted for publication  
+
+
+---
+
+Throughout the entire process, not just the analysis stage, you should consider using reproducible research methods  
+
+Save and never modify your original data  
+
+Make notes in your code - why not what  
+
+Collect metadata at every stage of your research    
+
+Use a version control system, such as Git/GitHub, to track different versions of code  
+
+Tools like R Markdown and Jupyter Notebooks are useful for maintaining documentation and code together in one place, and they are easy to update
+
+
+
+
+## Resources  
+
+-  [EDI](https://environmentaldatainitiative.org/)
+-  [EDI Data Portal](https://portal.edirepository.org/nis/home.jsp) - where you can search data
+-  EDI support: support@environmentaldatainitiative.org  
+
+-  [DataONE](https://www.dataone.org/)
+-  [Knowledge Network for Biocomplexity (KNB)](https://knb.ecoinformatics.org/)
+
+---
+
+-  [EDI's "Five Phases of Data Publishing"](https://environmentaldatainitiative.org/five-phases-of-data-publishing/)
+-  [EDI's Data Management Resources](https://environmentaldatainitiative.org/dm-resources/)  
+
+-  [DataONE Resources](https://www.dataone.org/resources)
+-  [DataONE Education](https://www.dataone.org/education)
+
+-  [GO FAIR](https://www.go-fair.org/fair-principles/)
+-  [The FAIR Guiding Principles for scientific data management and stewardship - Nature](https://www.nature.com/articles/sdata201618)
+-  [Make scientific data FAIR - Nature commentary](https://www.nature.com/articles/d41586-019-01720-7)
+-  [A manifesto for reproducible science - Nature](https://www.nature.com/articles/s41562-016-0021)
+
+
+## Contact  
+
+Kristofer Hall  
+khall001@unm.edu
